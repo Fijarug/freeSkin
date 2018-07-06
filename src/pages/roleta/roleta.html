@@ -1,0 +1,336 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Roleta</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<script type="text/javascript">
+  
+</script>
+
+<style type="text/css">
+  #bg{
+    background-image: url('assets/imgs/background.png');
+  }
+
+  .telaAntesGif1{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    top: 40%;
+    left: 0%;
+    z-index: 2;
+  }
+  .telaAntesGif2{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    top: 40%;
+    left: 35%;
+    z-index: 2;
+  }
+  .telaAntesGif3{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    top: 40%;
+    left: 70%;
+    z-index: 2;
+  }
+  .pizza1{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 0%;
+    z-index: 1;
+  }
+  .pizza2{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 35%;
+    z-index: 1;
+  }
+  .pizza3{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 70%;
+    z-index: 1;
+  }
+  .estelar1{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 0%;
+    z-index: 1;
+  }
+  .estelar2{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 35%;
+    z-index: 1;
+  }
+  .estelar3{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 70%;
+    z-index: 1;
+  }
+  .fliperama1{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 0%;
+    z-index: 1;
+  }
+  .fliperama2{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 35%;
+    z-index: 1;
+  }
+  .fliperama3{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 70%;
+    z-index: 1;
+  }
+  .galatico1{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 0%;
+    z-index: 1;
+  }
+  .galatico2{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 35%;
+    z-index: 1;
+  }
+  .galatico3{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 70%;
+    z-index: 1;
+  }
+  .pentakill1{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 0%;
+    z-index: 1;
+  }
+  .pentakill2{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 35%;
+    z-index: 1;
+  }
+  .pentakill3{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 70%;
+    z-index: 1;
+  }
+  .projeto1{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 0%;
+    z-index: 1;
+  }
+  .projeto2{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 35%;
+    z-index: 1;
+  }
+  .projeto3{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 70%;
+    z-index: 1;
+  }
+  .sonadj1{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 0%;
+    z-index: 1;
+  }
+  .sonadj2{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 35%;
+    z-index: 1;
+  }
+  .sonadj3{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 70%;
+    z-index: 1;
+  }
+
+  .gif1{
+    position: fixed;
+    top: 40%;
+    left: 0%;
+    z-index: 0;
+  }
+  .gif2{
+    position: fixed;
+    top: 40%;
+    left: 35%;
+    z-index: 0;
+  }
+  .gif3{
+    position: fixed;
+    top: 40%;
+    left: 70%;
+    z-index: 0;
+  }
+  .fundoImgs{
+    position: fixed;
+    top: 40%;
+    background: rgba(0,0,0,0);
+    background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.97) 29%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.97) 71%, rgba(0,0,0,0) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0)), color-stop(29%, rgba(0,0,0,0.97)), color-stop(30%, rgba(0,0,0,1)), color-stop(70%, rgba(0,0,0,1)), color-stop(71%, rgba(0,0,0,0.97)), color-stop(100%, rgba(0,0,0,0)));
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.97) 29%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.97) 71%, rgba(0,0,0,0) 100%);
+    background: -o-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.97) 29%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.97) 71%, rgba(0,0,0,0) 100%);
+    background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.97) 29%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.97) 71%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.97) 29%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.97) 71%, rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+    width: 100%;
+    height: 100px;
+    z-index: -1;
+  }
+  .botao{
+    margin-top: 40%;
+    margin-left: 40%;
+    z-index: 1;
+  }
+  .botao2{
+    margin-top: 40%;
+    margin-left: 40%;
+    z-index: 0;
+    position: fixed;
+  }
+</style>
+
+<ion-content id="bg">
+  <div>
+    <br/><br/>
+    <div>
+      <ion-card>
+        <ion-card-content>
+          Bem vindo a roleta de skins!<br/>
+          Preço do bilhete: 50 pontos.<br/>
+          Resultado 2 iguais: 300 pontos.<br/>
+          Resultado 3 iguais: 1000Ƶ.
+        </ion-card-content>
+      </ion-card>
+     </div>
+
+    <img *ngIf="telaSorteio == true" class="telaAntesGif1" src="assets/imgs/interrogacao.png"/>
+    <img class="gif1" src="assets/imgs/roleta.gif"/>
+    <img *ngIf="telaSorteio == true" class="telaAntesGif2" src="assets/imgs/interrogacao.png"/>
+    <img class="gif2" src="assets/imgs/roleta.gif"/>
+    <img *ngIf="telaSorteio == true" class="telaAntesGif3" src="assets/imgs/interrogacao.png"/>
+    <img class="gif3" src="assets/imgs/roleta.gif"/>
+
+    <img *ngIf="pizza" class="pizza1" src="assets/imgs/pizza.jpg"/>
+    <img *ngIf="pizza2" class="pizza2" src="assets/imgs/pizza.jpg"/>
+    <img *ngIf="pizza3" class="pizza3" src="assets/imgs/pizza.jpg"/>
+    
+    <img *ngIf="guardia" class="estelar1" src="assets/imgs/estelar.png"/>
+    <img *ngIf="guardia2" class="estelar2" src="assets/imgs/estelar.png"/>
+    <img *ngIf="guardia3" class="estelar3" src="assets/imgs/estelar.png"/>
+
+    <img *ngIf="fliperama" class="fliperama1" src="assets/imgs/fliperama.png"/>
+    <img *ngIf="fliperama2" class="fliperama2" src="assets/imgs/fliperama.png"/>
+    <img *ngIf="fliperama3" class="fliperama3" src="assets/imgs/fliperama.png"/>
+
+    <img *ngIf="galaticos" class="galatico1" src="assets/imgs/galatico.png"/>
+    <img *ngIf="galaticos2" class="galatico2" src="assets/imgs/galatico.png"/>
+    <img *ngIf="galaticos3" class="galatico3" src="assets/imgs/galatico.png"/>
+
+    <img *ngIf="pentakill" class="pentakill1" src="assets/imgs/pentakill.png"/>
+    <img *ngIf="pentakill2" class="pentakill2" src="assets/imgs/pentakill.png"/>
+    <img *ngIf="pentakill3" class="pentakill3" src="assets/imgs/pentakill.png"/>
+
+    <img *ngIf="projeto" class="projeto1" src="assets/imgs/projeto.png"/>
+    <img *ngIf="projeto2" class="projeto2" src="assets/imgs/projeto.png"/>
+    <img *ngIf="projeto3" class="projeto3" src="assets/imgs/projeto.png"/>
+
+    <img *ngIf="sonadj" class="sonadj1" src="assets/imgs/sonadj.png"/>
+    <img *ngIf="sonadj2" class="sonadj2" src="assets/imgs/sonadj.png"/>
+    <img *ngIf="sonadj3" class="sonadj3" src="assets/imgs/sonadj.png"/>
+
+    <div class="fundoImgs"></div>
+    <br/>
+    <button *ngIf="botao" class="botao" ion-button (click)="girarRoleta()">Girar</button>
+    <button class="botao2" ion-button disabled="true">Girar</button>
+  </div>
+</ion-content>

@@ -1,0 +1,33 @@
+<style type="text/css">
+.logo {
+  margin-top: 5%;
+  margin-left: 35%;
+  width: 100px;
+  height: 100px;
+}
+.bg{
+  background-color: #000000 !important;
+  color: #ffffff;
+}
+</style>
+
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>FreeƵkin</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="bg">
+    <ion-list class="bg">
+      <img class="logo" src="assets/imgs/logo.png"/>
+      <hr style="background-color: #ffffff" />
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" class="bg">
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

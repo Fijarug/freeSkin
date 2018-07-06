@@ -1,0 +1,95 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Chance Diária</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<style type="text/css">
+  #bg{
+    background-image: url('assets/imgs/background.png');
+  }
+
+  .telaAntesGif{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-color: #000;
+    top: 40%;
+    left: 35%;
+    z-index: 2;
+  }
+  .essenciaAzul{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 35%;
+    z-index: 1;
+  }
+  .essenciaLaranja{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: #000;
+    top: 40%;
+    left: 35%;
+    z-index: 1;
+  }
+  .gif{
+    position: fixed;
+    top: 40%;
+    left: 35%;
+    z-index: 0;
+  }
+  .fundoImgs{
+    position: fixed;
+    top: 40%;
+    background: rgba(0,0,0,0);
+    background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.97) 29%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.97) 71%, rgba(0,0,0,0) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0)), color-stop(29%, rgba(0,0,0,0.97)), color-stop(30%, rgba(0,0,0,1)), color-stop(70%, rgba(0,0,0,1)), color-stop(71%, rgba(0,0,0,0.97)), color-stop(100%, rgba(0,0,0,0)));
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.97) 29%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.97) 71%, rgba(0,0,0,0) 100%);
+    background: -o-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.97) 29%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.97) 71%, rgba(0,0,0,0) 100%);
+    background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0.97) 29%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.97) 71%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,0.97) 29%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.97) 71%, rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+    width: 100%;
+    height: 100px;
+    z-index: -1; 
+  }
+  .botao{
+    margin-top: 40%;
+    margin-left: 40%;
+  }
+  .botao2{
+    margin-top: 40%;
+    margin-left: 40%;
+    z-index: 0;
+    position: fixed;
+  }
+</style>
+
+<ion-content id="bg">
+  <div>
+    <br/><br/>
+    <div>
+      <ion-card>
+        <ion-card-content>
+          Aqui você poderá ganhar pontos, que podem ser usados para participar de sorteios que ocorrem com frequência, ou coins (Ƶ) que são usados para adquirir skins dentro do jogo.
+        </ion-card-content>
+      </ion-card>
+     </div>
+
+    <img *ngIf="telaSorteio == true" class="telaAntesGif" src="assets/imgs/chanceDiaria.png"/>
+    <img class="gif" src="assets/imgs/sorteio.gif"/>
+    <img *ngIf="essenciaAzul == false" class="essenciaAzul" src="assets/imgs/azul.png"/>
+    <img *ngIf="essenciaLaranja == false" class="essenciaLaranja" src="assets/imgs/laranja.png"/>
+    <div class="fundoImgs"></div>
+    <br/>
+    <button *ngIf="botao" class="botao" ion-button (click)="numeroRandom()">Girar</button>
+    <button class="botao2" ion-button disabled="true">Girar</button>
+  </div>
+</ion-content>

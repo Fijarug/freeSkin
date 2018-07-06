@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>FreeƵkin</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<script type="text/javascript">
+  
+</script>
+
+<style type="text/css">
+	#bg{
+	  background-image: url('assets/imgs/background.png');
+	}
+	.fundo{
+		border-radius: 10px;
+		opacity: 0.7;
+		background-color: #87CEFA;
+		position: fixed;
+		width: 90%;
+		height: 30%;
+		top: 28%;
+		left: 5%;
+		z-index: -1;
+	}
+	.fixo{
+		position: fixed;
+		width: 90%;
+		top: 28%;
+		left: 5%;
+	}
+	.botaoLogar{
+		position: fixed;
+		top: 59%;
+		left: 10%;
+		width: 80% !important;
+		border-radius: 10px;
+	}
+	.botaoCadastrar{
+		position: fixed;
+		top: 67%;
+		left: 10%;
+		width: 80% !important;
+		border-radius: 10px;
+	}
+	.fundoLogo{
+		border-radius: 10px;
+		opacity: 0.7;
+		background-color: #000000;
+		position: fixed;
+		width: 90%;
+		height: 120px;
+		top: 9%;
+		left: 5%;
+		z-index: -1;
+	}
+	.logo {
+		position: fixed;
+		top: 11%;
+		left: 35%;
+		width: 100px;
+		height: 100px;
+	}
+  	.camposCadastro {
+  		border: 1px solid #87CEFA;
+  		border-radius: 10px;
+	}
+</style>
+
+<ion-content id="bg">
+  <br/><br/>
+  	<div class="fundoLogo"></div>
+  	<img class="logo" src="assets/imgs/logo.png"/>
+  	<div class="fundo"></div>
+	<ion-list class="fixo" padding>
+	  <ion-item class="camposCadastro">
+	    <ion-label floating>Usuário</ion-label>
+	    <ion-input type="text"></ion-input>
+	  </ion-item>
+	<br/>
+	  <ion-item class="camposCadastro">
+	    <ion-label floating>Password</ion-label>
+	    <ion-input type="password"></ion-input>
+	  </ion-item>
+	</ion-list>
+
+	<button ion-button padding block class="botaoLogar">Entrar</button>
+	<button ion-button padding block class="botaoCadastrar" (click)="mudarPagina()">Cadastrar</button>
+</ion-content>

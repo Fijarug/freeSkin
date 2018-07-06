@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Caça ao Teemo</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<style>
+  .fixo{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    z-index: 2;
+  }
+  .golpe{
+    position: absolute;
+    left: 55%;
+    top: 40%;
+    z-index: 3;
+  }
+  .bgteemo{
+    background-image: url("assets/imgs/bgteemo.png") !important;
+    background-size: cover !important;
+  }
+  ion-scroll{
+    overflow: scroll; 
+    white-space: nowrap;
+  }
+  #bg {
+    background-image: url('assets/imgs/background.png');
+  }
+  .barraDeVida {
+    width: 100%;
+    height: 40px !important;
+  }
+  .posicaoTeemo {
+    margin-top: 35%;
+  }
+  .posicaoBarraVida {
+    margin-top: -9%;
+  }
+  .marginTop {
+    margin-top: 20%;
+  }
+</style>
+
+<ion-content id="bg" padding align="center">
+  <ion-grid>
+    <ion-row class="bgteemo fixo">
+      <ion-col col-12 class="marginTop">
+        <progress id="barraDeVida" max="{{ vidaMax }}" value="{{ vidaAtual }}" class="barraDeVida"> </progress>
+        <div class="posicaoBarraVida" id="barraDeVidaRestante">{{ vidaRestante }} %</div>
+
+        <div class="posicaoTeemo" (click)="baterNoMonstro()">
+          <img src="assets/imgs/teemo.gif"/>
+        </div>
+        
+        <div id="golpe" *ngIf="golpe == true" class="golpe">
+          <img src="assets/imgs/pow.png" width="50px" height="50px" />
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
